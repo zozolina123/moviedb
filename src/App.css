@@ -1,33 +1,117 @@
+
+h1{
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
 .App {
   text-align: center;
+  margin-top:75px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+  padding:10px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active{
+  color:rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link:hover{
+  color:rgba(255, 255, 255, 0.75);
 }
 
-.App-link {
-  color: #61dafb;
+.carousel img{
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel h1{
+  margin-top: 50px;
+}
+
+.carousel a{
+  color:#333;
+}
+
+.carousel a:hover{
+  text-decoration: none;
+}
+.carousel p span:first-child{
+  margin:0;
+  text-align:left;
+}
+
+.carousel p{
+  text-align:left;
+}
+
+.carousel p .arrow{
+  color:rgba(0,0,0,0.75);
+  height: 0;
+  z-index: 100;
+  position:absolute;
+  top:200px;
+  font-size:100px;
+  display:inline-block;
+  width:50%;
+  transition:color 0.75s;
+}
+.carousel p .arrow:hover{
+  cursor: pointer;
+  color:rgba(93, 144, 0,0.75);
+}
+
+.carousel p .arrow:first-child{
+  margin:0;
+  text-align:left;
+}
+
+.carousel p .arrow:last-child{
+  text-align: right;
+  margin:0;
+  right:0;
+}
+
+.cardCustom{
+  box-sizing: border-box;
+  height:650px;
+  border-radius:20px;
+  padding:25px;
+  background-color:#aaa;
+  flex: 30.333%;
+  margin:20px 1.5%;
+}
+
+.cardCustom img {
+  height: 400px;
+}
+
+.cardCustom .btnCustom {
+  background: #fff;
+}
+
+.showC {
+  padding:25px;
+  border-radius: 25px;
+  overflow-x:hidden;
+  margin-top: 0px;
+  background-color: #333;
+  color:#fff;
+}
+
+.show .details{
+  text-align:left;
+}
+.show .details h1{
+  text-align:center;
+}
+
+.containerCustom{
+  width:90%;
+}
+
+.details iframe{
+  width:100%;
+  height:300px;
 }
